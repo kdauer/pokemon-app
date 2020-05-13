@@ -3,17 +3,17 @@ import React from "react";
 export function Pokemon({ pokemon }) {
   return (
     <div className="pokemon">
-      <div classNAme="pokemon_name">
+      <div className="pokemon_name">
         <p>{pokemon.name}</p>
       </div>
-      <div classNAme="pokemon_meta">
+      <div className="pokemon_meta">
         <span>{pokemon.maxHP}</span>
         <span>{pokemon.maxCP}</span>
       </div>
-      <div classNAme="pokemon_image">
+      <div className="pokemon_image">
         <img src={pokemon.image} alt={pokemon.name} />
       </div>
-      <div classNAme="pokemon_attacks">
+      <div className="pokemon_attacks">
         {pokemon &&
           pokemon.attacks &&
           pokemon.attacks.special
